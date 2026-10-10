@@ -1,0 +1,6 @@
+
+docs/internal/privacy-findings.md
+docs/internal/privacy-scan.json
+
+node_modules
+artifacts/
