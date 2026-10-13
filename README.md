@@ -1,5 +1,5 @@
 # Congregation Assistant public website
 
-Public landing page for Congregation Assistant. Serve index.html, site.css, and site.js together. The application link opens https://photographicode.github.io/congregation-assistant/ . Trial requests create an email draft; no automatic submission or charge occurs. Annual offer: ₹1,499.
+Published V2 website, 2026-10-13. Source: photographicode/congregation-assistant/apps/site. Shared tokens and local fonts are packaged here. App links target the compiled V2 preview; publisher demo remains the legacy app. Requests submit to the existing authorized Supabase RPC. No payment is taken by the website. Paid integrations and Private mode are disabled.
 
-Run npm install and npx playwright install --with-deps chromium webkit, then npm test. CI checks desktop Chromium, mobile Chromium and mobile WebKit; the deployed check verifies asset hashes before testing.
+Current implementation status: https://github.com/photographicode/congregation-assistant/blob/main/docs/CURRENT-STATUS.md

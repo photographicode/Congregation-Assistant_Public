@@ -1,24 +1,139 @@
 (() => {
-    const menu=document.getElementById('mobile-menu'),toggle=document.getElementById('menu-toggle');
-    const close=()=>{menu.hidden=true;toggle.setAttribute('aria-expanded','false');};
-    toggle.addEventListener('click',()=>{menu.hidden=!menu.hidden;toggle.setAttribute('aria-expanded',String(!menu.hidden));});
-    menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
-    document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!menu.hidden){close();toggle.focus();}});
-    const previews={
-        records:{title:'Publisher records',description:'Keep profiles and reporting tasks together.',checks:['Search by name or group','Review monthly reports','Generate publisher record PDFs'],tag:'Service workspace',rows:[['Sample Publisher A','Group 1','Report ready'],['Sample Publisher B','Group 2','Needs review'],['Sample Publisher C','Group 1','Report ready'],['Sample Publisher D','Group 3','Report ready']]},
-        attendance:{title:'Meeting attendance',description:'A clear view of the month, ready for your reports.',checks:['Public form chooses today’s meeting automatically','Keep entered drafts while switching tabs','Generate S-3 and S-88 PDFs'],tag:'Attendance workspace',rows:[['Week 1','Midweek / Weekend','84 / 102'],['Week 2','Midweek / Weekend','88 / 107'],['Week 3','Midweek / Weekend','86 / 104'],['Week 4','Midweek / Weekend','90 / 109']]},
-        schedule:{title:'Midweek schedule',description:'Arrange assignments, review, then publish.',checks:['Publisher roster stays in sync','S-140-style publisher view and name search','Review before publishing','Saved online; publishing is a separate step','One notice board, with independent department publication'],tag:'OCLM workspace',rows:[['Chairman','Treasures from God’s Word','Sample Publisher A'],['Bible reading','Treasures from God’s Word','Sample Publisher B'],['Starting a conversation','Apply Yourself to the Field Ministry','Sample Publisher C'],['Congregation Bible study','Living as Christians','Sample Publisher D']]}
-    };
-    const tabs=[...document.querySelectorAll('[data-preview]')];
-    const draw=which=>{const p=previews[which];document.getElementById('preview-title').textContent=p.title;document.getElementById('preview-description').textContent=p.description;document.getElementById('preview-checks').innerHTML=p.checks.map(s=>`<p><span>✓</span>${s}</p>`).join('');for(const device of ['desktop','tablet','phone']){const img=document.getElementById('demo-'+device);img.src=`assets/demo/${device}-${which}.jpg`;img.alt=`${p.title} in fictional Demo Congregation on ${device}`;}document.getElementById('preview-panel').setAttribute('aria-labelledby','preview-tab-'+which);tabs.forEach(t=>{t.setAttribute('aria-selected',String(t.dataset.preview===which));t.tabIndex=t.dataset.preview===which?0:-1;});};
-    tabs.forEach((tab,index)=>{tab.addEventListener('click',()=>draw(tab.dataset.preview));tab.addEventListener('keydown',event=>{let next;if(event.key==='ArrowRight')next=(index+1)%tabs.length;else if(event.key==='ArrowLeft')next=(index+tabs.length-1)%tabs.length;else if(event.key==='Home')next=0;else if(event.key==='End')next=tabs.length-1;else return;event.preventDefault();tabs[next].focus();draw(tabs[next].dataset.preview);});});draw('records');
-    const devices=[...document.querySelectorAll('[data-device]')];devices.forEach(button=>button.addEventListener('click',()=>{document.querySelector('.actual-devices').dataset.activeDevice=button.dataset.device;devices.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));}));
-    const preferred=innerWidth<640?'phone':innerWidth<1024?'tablet':'desktop';devices.find(b=>b.dataset.device===preferred)?.click();
-    document.getElementById('trial-form').addEventListener('submit',async event=>{
-        event.preventDefault();const form=event.currentTarget;if(!form.reportValidity())return;const fields=new FormData(form),button=form.querySelector('[type=submit]'),result=document.getElementById('request-result');button.disabled=true;result.hidden=false;result.setAttribute('role','status');result.textContent='Submitting your request…';
-        const payload={p_name:fields.get('name'),p_contact_email:fields.get('email'),p_admin_email:fields.get('adminEmail'),p_congregation:fields.get('congregation'),p_phone:fields.get('phone')||'',p_authorized:fields.get('authorized')==='on',p_website:fields.get('website')||''};
-        try{const response=await fetch('https://ejosykrxjvwrhxfnputo.supabase.co/rest/v1/rpc/submit_workspace_application',{method:'POST',headers:{'Content-Type':'application/json','apikey':'sb_publishable_-WylxZpXTD06syk3LPGpWg_SfSf5K7C'},body:JSON.stringify(payload)});const data=await response.json();if(!response.ok||!data.received)throw Error(data.message||'The request could not be recorded.');result.textContent='Request received by SuperAdmin.'+(data.reference?' Your reference: '+data.reference+'.':'')+' We will review your congregation’s authorization. Your congregation Gmail will be the administrator after approval. Welcome emails are queued while the sender is being configured. No payment has been taken.';button.textContent='Request submitted';form.dataset.submitted='true';}
-        catch(error){result.setAttribute('role','alert');result.textContent='Request not confirmed. Your details are kept. '+error.message+' Retry, or contact congregationassistant0@gmail.com.';button.disabled=false;}
-        result.scrollIntoView({behavior:'smooth',block:'nearest'});
+  "use strict";
+  const toggle = document.getElementById("menu-toggle"),
+    nav = document.getElementById("site-navigation");
+  toggle?.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+  nav?.querySelectorAll("a").forEach((a) =>
+    a.addEventListener("click", () => {
+      nav.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    }),
+  );
+  const form = document.getElementById("request-form");
+  if (!form) return;
+  let step = 0;
+  const panels = [...form.querySelectorAll("[data-step]")],
+    back = document.getElementById("request-back"),
+    next = document.getElementById("request-next"),
+    submit = document.getElementById("request-submit"),
+    status = document.getElementById("request-result");
+  let catalogue;
+  fetch("./capabilities.json")
+    .then((r) => {
+      if (!r.ok) throw Error("Catalogue unavailable");
+      return r.json();
+    })
+    .then((data) => {
+      catalogue = data;
+      for (const module of data.modules.filter(
+        (m) => !["private", "whatsapp_api", "apk"].includes(m.id),
+      )) {
+        const label = document.createElement("label");
+        label.className = "check";
+        const check = document.createElement("input");
+        check.type = "checkbox";
+        check.name = "modules";
+        check.value = module.id;
+        check.checked = true;
+        label.append(check, document.createTextNode(module.name));
+        document.getElementById("module-options").append(label);
+      }
+    })
+    .catch(() => {
+      status.textContent =
+        "Capability list could not load. The request form still records your contact details.";
     });
+  const show = () => {
+    panels.forEach((p, i) => (p.hidden = i !== step));
+    back.hidden = step === 0;
+    next.hidden = step === 2;
+    submit.hidden = step !== 2;
+    document.getElementById("step-label").textContent =
+      `Step ${step + 1} of 3 · ${["What you need", "Contact details", "Review"][step]}`;
+    if (step === 2) {
+      const values = new FormData(form);
+      document.getElementById("request-summary").textContent =
+        `${values.get("congregation")} · ${values.get("adminEmail")} · ${values.get("delivery")} delivery · ${values.get("privacy")} privacy preference. Private mode requests record interest only.`;
+    }
+  };
+  next.addEventListener("click", () => {
+    const inputs = [...panels[step].querySelectorAll("input,select")];
+    if (inputs.some((i) => !i.reportValidity())) return;
+    step = Math.min(step + 1, 2);
+    show();
+  });
+  back.addEventListener("click", () => {
+    step = Math.max(step - 1, 0);
+    show();
+  });
+  form.elements.delivery.addEventListener("change", () => {
+    document.getElementById("consequences").textContent =
+      catalogue?.deliveryModes.find(
+        (m) => m.id === form.elements.delivery.value,
+      )?.description || "";
+  });
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    if (step !== 2) return;
+    submit.disabled = true;
+    status.textContent = "Submitting your request…";
+    const v = new FormData(form);
+    try {
+      const response = await fetch(
+        "https://ejosykrxjvwrhxfnputo.supabase.co/rest/v1/rpc/submit_v2_workspace_application",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            apikey: "sb_publishable_-WylxZpXTD06syk3LPGpWg_SfSf5K7C",
+          },
+          body: JSON.stringify({
+            p_choices: {
+              version: 2,
+              delivery: v.get("delivery"),
+              privacy: v.get("privacy"),
+              modules: v.getAll("modules"),
+            },
+            p_name: v.get("name"),
+            p_contact_email: v.get("email"),
+            p_admin_email: v.get("adminEmail"),
+            p_congregation: v.get("congregation"),
+            p_phone: v.get("phone"),
+            p_authorized: v.get("authorized") === "on",
+            p_website: v.get("website"),
+          }),
+        },
+      );
+      const result = await response.json();
+      if (!response.ok || !result.received)
+        throw Error(result.message || "Request not confirmed");
+      const preferences = {
+        reference: result.reference,
+        delivery: v.get("delivery"),
+        privacy: v.get("privacy"),
+        modules: v.getAll("modules"),
+      };
+      const url = URL.createObjectURL(
+        new Blob([JSON.stringify(preferences, null, 2)], {
+          type: "application/json",
+        }),
+      );
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "congregation-requirements.json";
+      a.textContent = "Download your selected requirements";
+      status.textContent = result.reference
+        ? `Request received. Reference: ${result.reference}. Your delivery and module choices are recorded. Private mode remains unavailable. `
+        : "A pending request already exists. Its choices have not been overwritten. Download these preferences to share with support. ";
+      status.append(a);
+      submit.textContent = "Request received";
+    } catch (error) {
+      status.textContent =
+        "Your request was not confirmed. Details are kept. " + error.message;
+      submit.disabled = false;
+    }
+  });
 })();
