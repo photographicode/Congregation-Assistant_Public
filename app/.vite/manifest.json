@@ -108,8 +108,8 @@
     "file": "assets/OclmSchedule-CqwAlyeI.css",
     "src": "_OclmSchedule-CqwAlyeI.css"
   },
-  "_OclmSchedule-MnsGZmp3.js": {
-    "file": "assets/OclmSchedule-MnsGZmp3.js",
+  "_OclmSchedule-Dh00zY5h.js": {
+    "file": "assets/OclmSchedule-Dh00zY5h.js",
     "name": "OclmSchedule",
     "imports": [
       "_dialogs-Dil_5clh.js",
@@ -119,8 +119,8 @@
       "assets/OclmSchedule-CqwAlyeI.css"
     ]
   },
-  "_Workspace-CXVZ-hrD.js": {
-    "file": "assets/Workspace-CXVZ-hrD.js",
+  "_Workspace-Bp2pI-CT.js": {
+    "file": "assets/Workspace-Bp2pI-CT.js",
     "name": "Workspace",
     "isDynamicEntry": true,
     "imports": [
@@ -128,7 +128,7 @@
       "_dialogs-Dil_5clh.js",
       "index.html",
       "_model-DaN2EBnz.js",
-      "_OclmSchedule-MnsGZmp3.js",
+      "_OclmSchedule-Dh00zY5h.js",
       "../../node_modules/fflate/esm/browser.js"
     ],
     "dynamicImports": [
@@ -180,7 +180,7 @@
     "name": "react"
   },
   "index.html": {
-    "file": "assets/index-e8oMAApq.js",
+    "file": "assets/index-C89KOAfT.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -199,7 +199,7 @@
       "../../node_modules/fflate/esm/browser.js",
       "src/features/PublicForm.tsx",
       "src/features/OwnerConsole.tsx",
-      "_Workspace-CXVZ-hrD.js",
+      "_Workspace-Bp2pI-CT.js",
       "src/features/device-keys.ts"
     ],
     "css": [
@@ -230,7 +230,7 @@
     ]
   },
   "src/features/OwnerConsole.tsx": {
-    "file": "assets/OwnerConsole-lPsenP_s.js",
+    "file": "assets/OwnerConsole-4elUrc_C.js",
     "name": "OwnerConsole",
     "src": "src/features/OwnerConsole.tsx",
     "isDynamicEntry": true,
@@ -242,7 +242,7 @@
     ]
   },
   "src/features/PdfStudio.tsx": {
-    "file": "assets/PdfStudio-DzJXBCy5.js",
+    "file": "assets/PdfStudio-Cq9oA1zI.js",
     "name": "PdfStudio",
     "src": "src/features/PdfStudio.tsx",
     "isDynamicEntry": true,
@@ -250,9 +250,9 @@
       "_preload-helper-CZAGPWw4.js",
       "_dialogs-Dil_5clh.js",
       "../../node_modules/fflate/esm/browser.js",
-      "_OclmSchedule-MnsGZmp3.js",
+      "_OclmSchedule-Dh00zY5h.js",
       "index.html",
-      "_Workspace-CXVZ-hrD.js",
+      "_Workspace-Bp2pI-CT.js",
       "_layout-CBj_2RqA.js",
       "_browser-Be3LZzHR.js",
       "_model-DaN2EBnz.js"
@@ -262,13 +262,13 @@
     ]
   },
   "src/features/PublicForm.tsx": {
-    "file": "assets/PublicForm-DGLFaJF1.js",
+    "file": "assets/PublicForm-CzKBnLqO.js",
     "name": "PublicForm",
     "src": "src/features/PublicForm.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_dialogs-Dil_5clh.js",
-      "_OclmSchedule-MnsGZmp3.js",
+      "_OclmSchedule-Dh00zY5h.js",
       "index.html",
       "_preload-helper-CZAGPWw4.js",
       "_browser-Be3LZzHR.js"

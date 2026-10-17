@@ -51,4 +51,4 @@ jobs:
         run: node scripts/check-pages-deploy.cjs
         env:
           CA_LIVE_URL: https://photographicode.github.io/Congregation-Assistant_Public/
-          CA_EXPECTED_COMMIT: b39726aaa0678a239602a9fb3a5fc434ab6ff8b4
+          CA_EXPECTED_COMMIT: d05f8c42fd919bc35e3c6852386099f51306fb17
