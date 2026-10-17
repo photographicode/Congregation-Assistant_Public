@@ -1,0 +1,294 @@
+{
+  "../../assets/fonts/NotoSans-Bold.woff2": {
+    "file": "assets/NotoSans-Bold-Dlpni4Pw.woff2",
+    "src": "../../assets/fonts/NotoSans-Bold.woff2"
+  },
+  "../../assets/fonts/NotoSans-Regular.woff2": {
+    "file": "assets/NotoSans-Regular-DYqU0KHH.woff2",
+    "src": "../../assets/fonts/NotoSans-Regular.woff2"
+  },
+  "../../assets/fonts/NotoSansBengali-Bold.ttf": {
+    "file": "assets/NotoSansBengali-Bold-b6flsQ6B.ttf",
+    "src": "../../assets/fonts/NotoSansBengali-Bold.ttf"
+  },
+  "../../assets/fonts/NotoSansBengali-Regular.ttf": {
+    "file": "assets/NotoSansBengali-Regular-ByHju1oA.ttf",
+    "src": "../../assets/fonts/NotoSansBengali-Regular.ttf"
+  },
+  "../../assets/fonts/NotoSansDevanagari-Bold.ttf": {
+    "file": "assets/NotoSansDevanagari-Bold-Cm5E8YL6.ttf",
+    "src": "../../assets/fonts/NotoSansDevanagari-Bold.ttf"
+  },
+  "../../assets/fonts/NotoSansDevanagari-Regular.ttf": {
+    "file": "assets/NotoSansDevanagari-Regular-CIJEaBX8.ttf",
+    "src": "../../assets/fonts/NotoSansDevanagari-Regular.ttf"
+  },
+  "../../assets/fonts/NotoSansGujarati-Bold.ttf": {
+    "file": "assets/NotoSansGujarati-Bold-Bnz0-9e_.ttf",
+    "src": "../../assets/fonts/NotoSansGujarati-Bold.ttf"
+  },
+  "../../assets/fonts/NotoSansGujarati-Regular.ttf": {
+    "file": "assets/NotoSansGujarati-Regular-D1OY9laU.ttf",
+    "src": "../../assets/fonts/NotoSansGujarati-Regular.ttf"
+  },
+  "../../assets/fonts/NotoSansGurmukhi-Bold.ttf": {
+    "file": "assets/NotoSansGurmukhi-Bold-DKxMPEgf.ttf",
+    "src": "../../assets/fonts/NotoSansGurmukhi-Bold.ttf"
+  },
+  "../../assets/fonts/NotoSansGurmukhi-Regular.ttf": {
+    "file": "assets/NotoSansGurmukhi-Regular-DhgDvr06.ttf",
+    "src": "../../assets/fonts/NotoSansGurmukhi-Regular.ttf"
+  },
+  "../../assets/fonts/NotoSansKannada-Bold.ttf": {
+    "file": "assets/NotoSansKannada-Bold-C_JEhEz2.ttf",
+    "src": "../../assets/fonts/NotoSansKannada-Bold.ttf"
+  },
+  "../../assets/fonts/NotoSansKannada-Regular.ttf": {
+    "file": "assets/NotoSansKannada-Regular-B7XP5do4.ttf",
+    "src": "../../assets/fonts/NotoSansKannada-Regular.ttf"
+  },
+  "../../assets/fonts/NotoSansMalayalam-Bold.ttf": {
+    "file": "assets/NotoSansMalayalam-Bold-By5EISDM.ttf",
+    "src": "../../assets/fonts/NotoSansMalayalam-Bold.ttf"
+  },
+  "../../assets/fonts/NotoSansMalayalam-Regular.ttf": {
+    "file": "assets/NotoSansMalayalam-Regular-CF5BxcIb.ttf",
+    "src": "../../assets/fonts/NotoSansMalayalam-Regular.ttf"
+  },
+  "../../assets/fonts/NotoSansTamil-Bold.ttf": {
+    "file": "assets/NotoSansTamil-Bold-ymYSHjMv.ttf",
+    "src": "../../assets/fonts/NotoSansTamil-Bold.ttf"
+  },
+  "../../assets/fonts/NotoSansTamil-Regular.ttf": {
+    "file": "assets/NotoSansTamil-Regular-DwgvaMU5.ttf",
+    "src": "../../assets/fonts/NotoSansTamil-Regular.ttf"
+  },
+  "../../assets/fonts/NotoSansTelugu-Bold.ttf": {
+    "file": "assets/NotoSansTelugu-Bold-DpSRQ-it.ttf",
+    "src": "../../assets/fonts/NotoSansTelugu-Bold.ttf"
+  },
+  "../../assets/fonts/NotoSansTelugu-Regular.ttf": {
+    "file": "assets/NotoSansTelugu-Regular-Blx13bra.ttf",
+    "src": "../../assets/fonts/NotoSansTelugu-Regular.ttf"
+  },
+  "../../assets/fonts/inter-latin-variable.woff2": {
+    "file": "assets/inter-latin-variable-Dx4kXJAl.woff2",
+    "src": "../../assets/fonts/inter-latin-variable.woff2"
+  },
+  "../../assets/fonts/newsreader-latin-variable.woff2": {
+    "file": "assets/newsreader-latin-variable-CCVVNp6i.woff2",
+    "src": "../../assets/fonts/newsreader-latin-variable.woff2"
+  },
+  "../../assets/fonts/space-grotesk-latin-variable.woff2": {
+    "file": "assets/space-grotesk-latin-variable-BhU9QXUp.woff2",
+    "src": "../../assets/fonts/space-grotesk-latin-variable.woff2"
+  },
+  "../../node_modules/fflate/esm/browser.js": {
+    "file": "assets/browser-CXh1ITwj.js",
+    "name": "browser",
+    "src": "../../node_modules/fflate/esm/browser.js",
+    "isDynamicEntry": true
+  },
+  "../../node_modules/harfbuzzjs/dist/harfbuzz.wasm": {
+    "file": "assets/harfbuzz-D8K1R6Rw.wasm",
+    "src": "../../node_modules/harfbuzzjs/dist/harfbuzz.wasm"
+  },
+  "../../packages/pdf/meeting-output.mjs": {
+    "file": "assets/meeting-output-CZsj08xA.js",
+    "name": "meeting-output",
+    "src": "../../packages/pdf/meeting-output.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "_layout-CBj_2RqA.js",
+      "_dialogs-Dil_5clh.js",
+      "_preload-helper-CZAGPWw4.js"
+    ]
+  },
+  "_OclmSchedule-CqwAlyeI.css": {
+    "file": "assets/OclmSchedule-CqwAlyeI.css",
+    "src": "_OclmSchedule-CqwAlyeI.css"
+  },
+  "_OclmSchedule-DViI8w7d.js": {
+    "file": "assets/OclmSchedule-DViI8w7d.js",
+    "name": "OclmSchedule",
+    "imports": [
+      "_dialogs-Dil_5clh.js",
+      "index.html"
+    ],
+    "css": [
+      "assets/OclmSchedule-CqwAlyeI.css"
+    ]
+  },
+  "_Workspace-BwqID2h0.js": {
+    "file": "assets/Workspace-BwqID2h0.js",
+    "name": "Workspace",
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-CZAGPWw4.js",
+      "_dialogs-Dil_5clh.js",
+      "index.html",
+      "_model-DaN2EBnz.js",
+      "_OclmSchedule-DViI8w7d.js",
+      "../../node_modules/fflate/esm/browser.js"
+    ],
+    "dynamicImports": [
+      "../../packages/pdf/meeting-output.mjs",
+      "../../packages/pdf/meeting-output.mjs",
+      "src/features/crypto-core.mjs",
+      "src/features/crypto-core.mjs",
+      "src/features/PdfStudio.tsx"
+    ]
+  },
+  "___vite-browser-external-D7Ct-6yo.js": {
+    "file": "assets/__vite-browser-external-D7Ct-6yo.js",
+    "name": "__vite-browser-external",
+    "isDynamicEntry": true
+  },
+  "_browser-Be3LZzHR.js": {
+    "file": "assets/browser-Be3LZzHR.js",
+    "name": "browser",
+    "isDynamicEntry": true
+  },
+  "_dialogs-Dil_5clh.js": {
+    "file": "assets/dialogs-Dil_5clh.js",
+    "name": "dialogs"
+  },
+  "_layout-CBj_2RqA.js": {
+    "file": "assets/layout-CBj_2RqA.js",
+    "name": "layout",
+    "imports": [
+      "_dialogs-Dil_5clh.js",
+      "_preload-helper-CZAGPWw4.js"
+    ],
+    "dynamicImports": [
+      "___vite-browser-external-D7Ct-6yo.js"
+    ],
+    "assets": [
+      "assets/harfbuzz-D8K1R6Rw.wasm"
+    ]
+  },
+  "_model-DaN2EBnz.js": {
+    "file": "assets/model-DaN2EBnz.js",
+    "name": "model"
+  },
+  "_preload-helper-CZAGPWw4.js": {
+    "file": "assets/preload-helper-CZAGPWw4.js",
+    "name": "preload-helper"
+  },
+  "_react-l0sNRNKZ.js": {
+    "file": "assets/react-l0sNRNKZ.js",
+    "name": "react"
+  },
+  "index.html": {
+    "file": "assets/index-DFWvOqNM.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "_preload-helper-CZAGPWw4.js",
+      "_dialogs-Dil_5clh.js",
+      "_browser-Be3LZzHR.js"
+    ],
+    "dynamicImports": [
+      "_browser-Be3LZzHR.js",
+      "_browser-Be3LZzHR.js",
+      "_browser-Be3LZzHR.js",
+      "_browser-Be3LZzHR.js",
+      "_browser-Be3LZzHR.js",
+      "src/features/crypto-core.mjs",
+      "../../node_modules/fflate/esm/browser.js",
+      "src/features/PublicForm.tsx",
+      "src/features/OwnerConsole.tsx",
+      "_Workspace-BwqID2h0.js",
+      "src/features/device-keys.ts"
+    ],
+    "css": [
+      "assets/index-Ckq9hhjs.css"
+    ],
+    "assets": [
+      "assets/inter-latin-variable-Dx4kXJAl.woff2",
+      "assets/space-grotesk-latin-variable-BhU9QXUp.woff2",
+      "assets/newsreader-latin-variable-CCVVNp6i.woff2",
+      "assets/NotoSans-Regular-DYqU0KHH.woff2",
+      "assets/NotoSans-Bold-Dlpni4Pw.woff2",
+      "assets/NotoSansDevanagari-Regular-CIJEaBX8.ttf",
+      "assets/NotoSansDevanagari-Bold-Cm5E8YL6.ttf",
+      "assets/NotoSansBengali-Regular-ByHju1oA.ttf",
+      "assets/NotoSansBengali-Bold-b6flsQ6B.ttf",
+      "assets/NotoSansGurmukhi-Regular-DhgDvr06.ttf",
+      "assets/NotoSansGurmukhi-Bold-DKxMPEgf.ttf",
+      "assets/NotoSansGujarati-Regular-D1OY9laU.ttf",
+      "assets/NotoSansGujarati-Bold-Bnz0-9e_.ttf",
+      "assets/NotoSansTamil-Regular-DwgvaMU5.ttf",
+      "assets/NotoSansTamil-Bold-ymYSHjMv.ttf",
+      "assets/NotoSansTelugu-Regular-Blx13bra.ttf",
+      "assets/NotoSansTelugu-Bold-DpSRQ-it.ttf",
+      "assets/NotoSansKannada-Regular-B7XP5do4.ttf",
+      "assets/NotoSansKannada-Bold-C_JEhEz2.ttf",
+      "assets/NotoSansMalayalam-Regular-CF5BxcIb.ttf",
+      "assets/NotoSansMalayalam-Bold-By5EISDM.ttf"
+    ]
+  },
+  "src/features/OwnerConsole.tsx": {
+    "file": "assets/OwnerConsole-DH6DZ9SD.js",
+    "name": "OwnerConsole",
+    "src": "src/features/OwnerConsole.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_dialogs-Dil_5clh.js",
+      "index.html",
+      "_preload-helper-CZAGPWw4.js",
+      "_browser-Be3LZzHR.js"
+    ]
+  },
+  "src/features/PdfStudio.tsx": {
+    "file": "assets/PdfStudio-D52tZmSi.js",
+    "name": "PdfStudio",
+    "src": "src/features/PdfStudio.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-CZAGPWw4.js",
+      "_dialogs-Dil_5clh.js",
+      "../../node_modules/fflate/esm/browser.js",
+      "_OclmSchedule-DViI8w7d.js",
+      "index.html",
+      "_Workspace-BwqID2h0.js",
+      "_layout-CBj_2RqA.js",
+      "_browser-Be3LZzHR.js",
+      "_model-DaN2EBnz.js"
+    ],
+    "dynamicImports": [
+      "../../packages/pdf/meeting-output.mjs"
+    ]
+  },
+  "src/features/PublicForm.tsx": {
+    "file": "assets/PublicForm-DWlAG_kw.js",
+    "name": "PublicForm",
+    "src": "src/features/PublicForm.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_dialogs-Dil_5clh.js",
+      "_OclmSchedule-DViI8w7d.js",
+      "index.html",
+      "_preload-helper-CZAGPWw4.js",
+      "_browser-Be3LZzHR.js"
+    ]
+  },
+  "src/features/crypto-core.mjs": {
+    "file": "assets/crypto-core-xr9BPgls.js",
+    "name": "crypto-core",
+    "src": "src/features/crypto-core.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "_dialogs-Dil_5clh.js",
+      "___vite-browser-external-D7Ct-6yo.js",
+      "_model-DaN2EBnz.js"
+    ]
+  },
+  "src/features/device-keys.ts": {
+    "file": "assets/device-keys-C707qWS4.js",
+    "name": "device-keys",
+    "src": "src/features/device-keys.ts",
+    "isDynamicEntry": true
+  }
+}
