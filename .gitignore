@@ -1,0 +1,9 @@
+node_modules/
+.env*
+*.pem
+*.key
+supabase/.temp/
+docs/private-reference/
+tests/fixtures/private/
+artifacts/
+work/

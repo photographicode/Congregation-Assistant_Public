@@ -1,0 +1,1 @@
+const suffix=location.pathname.split('/v2/')[1]||'';location.replace("/Congregation-Assistant_Public/app/"+suffix+location.search+location.hash);
