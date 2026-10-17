@@ -14,8 +14,10 @@ CNAME is intentionally absent until the owner confirms DNS. GitHub Pages does no
 
 ## NEXT snapshot — 18 October 2026
 
-The B/W website and app are built from source commit 44bcc6de677c0d62fc878ba22f568324b7dd06ee. Worker downloads, Home group links, talk history, install flow, theme fonts and verified English WOL data are included. The scheduled WOL workflow refreshes public publication metadata only and republishes Pages after successful runs.
+The B/W website and app are built from source commit f0a0d67d437538bee6d319d70ebbc120031c3ad0. Worker downloads, Home group links, talk history, install flow, theme fonts and verified English WOL data are included. The scheduled WOL workflow refreshes public publication metadata only and republishes Pages after successful runs.
 
 Full alignment, remaining WOL languages, full site translations/mockups and broader V3 parity remain open. Unverified offers and encryption claims stay off. See the source repository's docs/V3-PROGRESS.md and docs/CUTOVER-REPORT.md. No custom-domain CNAME is included.
 
 The account avatar is constrained to its header button at large text sizes; source regression passes all 60 responsive views.
+
+Automatic source refresh preserves existing compatible assignment slot IDs, including offline edits.
