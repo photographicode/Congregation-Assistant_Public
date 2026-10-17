@@ -4,7 +4,7 @@ Website: https://photographicode.github.io/Congregation-Assistant_Public/
 
 App demo: https://photographicode.github.io/Congregation-Assistant_Public/app/?demo=admin
 
-This repository publishes a built snapshot from [the source repository](https://github.com/photographicode/congregation-assistant), source commit `674e3f1d055752434e38229e564b285fcba00e36`, merged through [PR #41](https://github.com/photographicode/congregation-assistant/pull/41). Source/version metadata is also in deployment.json and app/version.json. The site and app ship in one Pages artifact; the existing root publishing path also remains usable.
+This repository publishes a built snapshot from [the source repository](https://github.com/photographicode/congregation-assistant), source commit `b39726aaa0678a239602a9fb3a5fc434ab6ff8b4`, merged through [PR #41](https://github.com/photographicode/congregation-assistant/pull/41). Source/version metadata is also in deployment.json and app/version.json. The site and app ship in one Pages artifact; the existing root publishing path also remains usable.
 
 This is a review checkpoint, not full V3 completion. [The cutover report](https://github.com/photographicode/congregation-assistant/blob/main/docs/CUTOVER-REPORT.md) lists remaining work and tests. Official-source import returned HTTP 400, so Add parts remains the fallback. One combined production meeting-workflow migration was rejected by automatic review and remains unapplied. SFTS and confirmed-report endpoints were applied with authenticated-only privileges.
 
