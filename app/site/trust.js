@@ -1,1 +1,0 @@
-fetch('/trust-metrics.json').then(r=>r.ok?r.json():null).then(m=>{const el=document.getElementById('trust-metrics');if(!el||!m?.verifiedAt)return;const p=document.createElement('p');p.textContent='Build verified '+m.verifiedAt;el.append(p);}).catch(()=>{});

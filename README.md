@@ -11,3 +11,9 @@ This is a review checkpoint, not full V3 completion. [The cutover report](https:
 The supplied form reference files are excluded. Layouts are independently drawn. Examples are fictional. Application code is All rights reserved; bundled third-party packages and fonts retain their respective licenses. No end-to-end encryption claim is made. The assistant is a deterministic on-device parser; confirmed records use the normal backend.
 
 CNAME is intentionally absent until the owner confirms DNS. GitHub Pages does not supply the Cloudflare security headers. Real login requires provider redirect configuration for the Pages app URL.
+
+## NEXT snapshot — 18 October 2026
+
+The B/W website and app are built from source commit c9447939548adce2c493aea289a27c6932b0a00d. Worker downloads, Home group links, talk history, install flow, theme fonts and verified English WOL data are included. The scheduled WOL workflow refreshes public publication metadata only and republishes Pages after successful runs.
+
+Full alignment, remaining WOL languages, full site translations/mockups and broader V3 parity remain open. Unverified offers and encryption claims stay off. See the source repository's docs/V3-PROGRESS.md and docs/CUTOVER-REPORT.md. No custom-domain CNAME is included.

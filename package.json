@@ -1,1 +1,11 @@
-{"name":"congregation-assistant-public","private":true,"scripts":{"test":"CA_STATIC_ROOT=. node scripts/check-pages-deploy.cjs"},"devDependencies":{"playwright":"1.62.1"}}
+{
+  "name": "congregation-assistant-public",
+  "private": true,
+  "scripts": {
+    "test": "CA_STATIC_ROOT=. node scripts/check-pages-deploy.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "linkedom": "0.18.12"
+  }
+}
