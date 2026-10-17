@@ -94,7 +94,7 @@
     "src": "../../node_modules/harfbuzzjs/dist/harfbuzz.wasm"
   },
   "../../packages/pdf/meeting-output.mjs": {
-    "file": "assets/meeting-output-CZsj08xA.js",
+    "file": "assets/meeting-output-D0-vDqxq.js",
     "name": "meeting-output",
     "src": "../../packages/pdf/meeting-output.mjs",
     "isDynamicEntry": true,
@@ -104,12 +104,8 @@
       "_preload-helper-CZAGPWw4.js"
     ]
   },
-  "_OclmSchedule-CqwAlyeI.css": {
-    "file": "assets/OclmSchedule-CqwAlyeI.css",
-    "src": "_OclmSchedule-CqwAlyeI.css"
-  },
-  "_OclmSchedule-DyTNsfj1.js": {
-    "file": "assets/OclmSchedule-DyTNsfj1.js",
+  "_OclmSchedule-BnZuCQSG.js": {
+    "file": "assets/OclmSchedule-BnZuCQSG.js",
     "name": "OclmSchedule",
     "imports": [
       "_dialogs-Dil_5clh.js",
@@ -119,8 +115,12 @@
       "assets/OclmSchedule-CqwAlyeI.css"
     ]
   },
-  "_Workspace-BCrd40ql.js": {
-    "file": "assets/Workspace-BCrd40ql.js",
+  "_OclmSchedule-CqwAlyeI.css": {
+    "file": "assets/OclmSchedule-CqwAlyeI.css",
+    "src": "_OclmSchedule-CqwAlyeI.css"
+  },
+  "_Workspace-BDhOTHFH.js": {
+    "file": "assets/Workspace-BDhOTHFH.js",
     "name": "Workspace",
     "isDynamicEntry": true,
     "imports": [
@@ -128,7 +128,7 @@
       "_dialogs-Dil_5clh.js",
       "index.html",
       "_model-DaN2EBnz.js",
-      "_OclmSchedule-DyTNsfj1.js",
+      "_OclmSchedule-BnZuCQSG.js",
       "../../node_modules/fflate/esm/browser.js"
     ],
     "dynamicImports": [
@@ -180,7 +180,7 @@
     "name": "react"
   },
   "index.html": {
-    "file": "assets/index-52m9oF7T.js",
+    "file": "assets/index-Tk4sZMkY.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -199,7 +199,7 @@
       "../../node_modules/fflate/esm/browser.js",
       "src/features/PublicForm.tsx",
       "src/features/OwnerConsole.tsx",
-      "_Workspace-BCrd40ql.js",
+      "_Workspace-BDhOTHFH.js",
       "src/features/device-keys.ts"
     ],
     "css": [
@@ -230,7 +230,7 @@
     ]
   },
   "src/features/OwnerConsole.tsx": {
-    "file": "assets/OwnerConsole-BTV7ffke.js",
+    "file": "assets/OwnerConsole-CzMxaMr-.js",
     "name": "OwnerConsole",
     "src": "src/features/OwnerConsole.tsx",
     "isDynamicEntry": true,
@@ -242,7 +242,7 @@
     ]
   },
   "src/features/PdfStudio.tsx": {
-    "file": "assets/PdfStudio-B42ELb3x.js",
+    "file": "assets/PdfStudio-4yTSPZGk.js",
     "name": "PdfStudio",
     "src": "src/features/PdfStudio.tsx",
     "isDynamicEntry": true,
@@ -250,9 +250,9 @@
       "_preload-helper-CZAGPWw4.js",
       "_dialogs-Dil_5clh.js",
       "../../node_modules/fflate/esm/browser.js",
-      "_OclmSchedule-DyTNsfj1.js",
+      "_OclmSchedule-BnZuCQSG.js",
       "index.html",
-      "_Workspace-BCrd40ql.js",
+      "_Workspace-BDhOTHFH.js",
       "_layout-CBj_2RqA.js",
       "_browser-Be3LZzHR.js",
       "_model-DaN2EBnz.js"
@@ -262,13 +262,13 @@
     ]
   },
   "src/features/PublicForm.tsx": {
-    "file": "assets/PublicForm-jwCJaskf.js",
+    "file": "assets/PublicForm-BnGZo_Vd.js",
     "name": "PublicForm",
     "src": "src/features/PublicForm.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_dialogs-Dil_5clh.js",
-      "_OclmSchedule-DyTNsfj1.js",
+      "_OclmSchedule-BnZuCQSG.js",
       "index.html",
       "_preload-helper-CZAGPWw4.js",
       "_browser-Be3LZzHR.js"
