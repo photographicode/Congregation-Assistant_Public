@@ -1,23 +1,13 @@
-# Congregation Assistant — public V3 checkpoint
+# Congregation Assistant
 
 Website: https://photographicode.github.io/Congregation-Assistant_Public/
 
-App demo: https://photographicode.github.io/Congregation-Assistant_Public/app/?demo=admin
+App: https://photographicode.github.io/Congregation-Assistant_Public/app/
 
-This repository publishes a built snapshot from [the source repository](https://github.com/photographicode/congregation-assistant), source commit `4bedb53560b8ce9525a0f8bcdeb60e5e1ae11520`, merged through [PR #41](https://github.com/photographicode/congregation-assistant/pull/41). Source/version metadata is also in deployment.json and app/version.json. The site and app ship in one Pages artifact; the existing root publishing path also remains usable.
+This repository contains the built website and native application from [the source repository](https://github.com/photographicode/congregation-assistant). The R1 runtime source is `3013329e37213d06c7bd06e1ea75f2d14eee1ac9`; deployment.json and app/version.json record the same provenance. Subsequent source changes refine acceptance fixtures and release evidence without changing this runtime.
 
-This is a review checkpoint, not full V3 completion. [The cutover report](https://github.com/photographicode/congregation-assistant/blob/main/docs/CUTOVER-REPORT.md) lists remaining work and tests. Official-source import returned HTTP 400, so Add parts remains the fallback. The original combined migration rejection was resolved by an accepted, narrower rollout. SFTS, confirmed-report, current attendance, scoped-group and setup/calendar helpers are applied with authenticated-only privileges. Existing department approval checks are preserved.
+R1 restores report entry, publisher gender selection, AP review with guarded Undo/audit, the custom OCLM picker and assignment cautions, conditional auxiliary output and dismissible overlays. PDFs use embedded static Noto Sans with measured cells. Offline reports keep a tab-local draft and require manual retry. The assistant is an on-device deterministic parser; it does not send commands over the network. Confirmed records use the normal authorized backend.
 
-The supplied form reference files are excluded. Layouts are independently drawn. Examples are fictional. Application code is All rights reserved; bundled third-party packages and fonts retain their respective licenses. No end-to-end encryption claim is made. The assistant is a deterministic on-device parser; confirmed records use the normal backend.
+Release evidence and remaining R2 work are in [POLISH-REPORT](https://github.com/photographicode/congregation-assistant/blob/main/docs/POLISH-REPORT.md). R2 order: front-door cleanup, pricing config/page, website visual lock, domain switch, translation coverage, billing. Real phones, real printers, WhatsApp delivery and Razorpay are not claimed verified.
 
-CNAME is intentionally absent until the owner confirms DNS. GitHub Pages does not supply the Cloudflare security headers. Real login requires provider redirect configuration for the Pages app URL.
-
-## NEXT snapshot — 18 October 2026
-
-The B/W website and app are built from source commit f0a0d67d437538bee6d319d70ebbc120031c3ad0. Worker downloads, Home group links, talk history, install flow, theme fonts and verified English WOL data are included. The scheduled WOL workflow refreshes public publication metadata only and republishes Pages after successful runs.
-
-Full alignment, remaining WOL languages, full site translations/mockups and broader V3 parity remain open. Unverified offers and encryption claims stay off. See the source repository's docs/V3-PROGRESS.md and docs/CUTOVER-REPORT.md. No custom-domain CNAME is included.
-
-The account avatar is constrained to its header button at large text sizes; source regression passes all 60 responsive views.
-
-Automatic source refresh preserves existing compatible assignment slot IDs, including offline edits.
+CNAME remains absent until the owner confirms domain readiness. GitHub Pages does not apply Cloudflare-only security headers. Examples are fictional; no production records are in this static snapshot. Application code and bundled third-party fonts/packages retain their respective licenses. No end-to-end encryption claim is made.
