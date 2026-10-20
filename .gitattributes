@@ -1,3 +1,0 @@
-app/assets/** -diff
-assets/*.js -diff
-*.wasm -diff
